@@ -1,0 +1,2 @@
+# HelpHub-AI-Powered-Customer-Support-Analytics-Platform
+HelpHub is a comprehensive analytics platform designed to transform customer support operations through intelligent data analysis and AI-powered insights. Built to address the critical gap between support teams generating valuable interaction data and management having actionable intelligence to improve performance and customer satisfaction.
