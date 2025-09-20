@@ -41,7 +41,7 @@ DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=helphub
 DB_USER=helphub_user
-DB_PASSWORD=helphub123
+DB_PASSWORD=your_secure_password
 PORT=3000
 ```
 
