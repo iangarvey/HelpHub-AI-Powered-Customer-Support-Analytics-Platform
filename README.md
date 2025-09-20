@@ -24,7 +24,7 @@ cd HelpHub-AI-Powered-Customer-Support-Analytics-Platform
 docker run --name helphub-db \
   -e POSTGRES_DB=helphub \
   -e POSTGRES_USER=helphub_user \
-  -e POSTGRES_PASSWORD=helphub123 \
+  -e POSTGRES_PASSWORD=your_secure_password \
   -p 5432:5432 \
   -d postgres:15
 ```
