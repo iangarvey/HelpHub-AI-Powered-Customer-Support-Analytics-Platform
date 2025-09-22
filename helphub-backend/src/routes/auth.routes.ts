@@ -1,0 +1,1 @@
+// Routes for authentication endpoints (e.g., /login, /register).

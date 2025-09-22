@@ -1,6 +1,16 @@
 {
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "paths": {
+    "@config/*": ["config/*"],
+    "@middlewares/*": ["middlewares/*"],
+    "@controllers/*": ["controllers/*"],
+    "@routes/*": ["routes/*"],
+    "@utils/*": ["utils/*"]
+    },
     // File Layout
     // "rootDir": "./src",
     // "outDir": "./dist",

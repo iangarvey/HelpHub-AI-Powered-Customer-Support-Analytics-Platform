@@ -1,3 +1,5 @@
+// Configures the Express application, initializes middlewares, and registers routes.
+
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';

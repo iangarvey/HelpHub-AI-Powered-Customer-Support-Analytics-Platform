@@ -1,0 +1,1 @@
+// Provides utility methods for sending consistent API responses.

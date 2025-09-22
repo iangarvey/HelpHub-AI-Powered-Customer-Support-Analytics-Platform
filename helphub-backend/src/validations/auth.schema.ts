@@ -1,0 +1,1 @@
+// Defines validation schemas for authentication-related requests (e.g., login, registration).
