@@ -2,22 +2,11 @@
 // Key Features: Ensures a singleton instance of the Prisma client for efficient database connections. 
 // Prevents unnecessary re-initialization in development environments.
 
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from "@prisma/client";
 
-const prisma = new PrismaClient();
+const globalForPrisma = global as unknown as { prisma: PrismaClient };
 
-export const connectDatabase = async () => {
-  try {
-    await prisma.$connect();
-    return prisma;
-  } catch (error) {
-    console.error('Database connection failed:', error);
-    throw error;
-  }
-};
+export const prisma =
+  globalForPrisma.prisma || new PrismaClient();
 
-export const disconnectDatabase = async () => {
-  await prisma.$disconnect();
-};
-
-export default prisma;
+if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
